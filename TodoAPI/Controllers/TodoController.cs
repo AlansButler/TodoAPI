@@ -19,6 +19,7 @@ namespace TodoApi.Controllers
 		//so it runs every time there's a new HTTP request. If you delete all items, 
 		//the constructor creates Item1 again the next time an API method is called. 
 		//So it may look like the deletion didn't work when it actually did work.
+		//You would derive from Controller not ControllerBase if building a web page.  Controller descends from Controllerbase and adds support for views.
 		public TodoController(TodoContext context)
 		{
 			_context = context;

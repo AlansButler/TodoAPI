@@ -78,7 +78,7 @@ function addItem() {
     contentType: "application/json",
     data: JSON.stringify(item),
     error: function (jqXHR, textStatus, errorThrown) {
-      alert("Something went wrong!");
+      alert("Something went wrong!" + item );
     },
     success: function (result) {
       getData();

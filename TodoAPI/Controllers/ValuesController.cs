@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace TodoAPI.Controllers
 {
+	//You would derive from Controller not ControllerBase if building a web page.  Controller descends from Controllerbase and adds support for views.
 	[Route("api/[controller]")]
 	[ApiController]  //This attribute indicates that the controller responds to web API requests. 
 	public class ValuesAlController : ControllerBase
